@@ -1,0 +1,560 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		55EBD0072F8D0C3000B0D1FF /* HomebrewHelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EBD0062F8D0C3000B0D1FF /* HomebrewHelperProtocol.swift */; };
+		55EBD00A2F8D0C9700B0D1FF /* BrewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EBD0092F8D0C9700B0D1FF /* BrewService.swift */; };
+		55EBD01C2F8D0EB500B0D1FF /* HomebrewHelper.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = 55EBD0112F8D0EB500B0D1FF /* HomebrewHelper.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		55EBD0272F8D16C300B0D1FF /* HomebrewHelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EBD0062F8D0C3000B0D1FF /* HomebrewHelperProtocol.swift */; };
+		55F02C9D2F85089500207B0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55F02C952F85089500207B0C /* Assets.xcassets */; };
+		55F02C9E2F85089500207B0C /* AuthWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F02C972F85089500207B0C /* AuthWebView.swift */; };
+		55F02C9F2F85089500207B0C /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F02C992F85089500207B0C /* Downloader.swift */; };
+		55F02CA02F85089500207B0C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F02C982F85089500207B0C /* ContentView.swift */; };
+		55F02CA12F85089500207B0C /* XVideoLoaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F02C9B2F85089500207B0C /* XVideoLoaderApp.swift */; };
+		55F02CA22F85089500207B0C /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F02C962F85089500207B0C /* AuthManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		55EBD01A2F8D0EB500B0D1FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55F02C712F85084400207B0C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55EBD0102F8D0EB500B0D1FF;
+			remoteInfo = HomebrewHelperService;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		55EBD0212F8D0EB500B0D1FF /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				55EBD01C2F8D0EB500B0D1FF /* HomebrewHelper.xpc in Embed XPC Services */,
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		55EBCFF62F8C4EE100B0D1FF /* XVideoLoader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XVideoLoader.entitlements; sourceTree = "<group>"; };
+		55EBD0062F8D0C3000B0D1FF /* HomebrewHelperProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomebrewHelperProtocol.swift; sourceTree = "<group>"; };
+		55EBD0092F8D0C9700B0D1FF /* BrewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewService.swift; sourceTree = "<group>"; };
+		55EBD0112F8D0EB500B0D1FF /* HomebrewHelper.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = HomebrewHelper.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		55F02C792F85084400207B0C /* XVideoLoader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XVideoLoader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55F02C952F85089500207B0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		55F02C962F85089500207B0C /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		55F02C972F85089500207B0C /* AuthWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthWebView.swift; sourceTree = "<group>"; };
+		55F02C982F85089500207B0C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		55F02C992F85089500207B0C /* Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
+		55F02C9B2F85089500207B0C /* XVideoLoaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XVideoLoaderApp.swift; sourceTree = "<group>"; };
+		55F02CA62F8508F100207B0C /* Combine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Combine.framework; path = System/Library/Frameworks/Combine.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		55EBD0122F8D0EB500B0D1FF /* HomebrewHelperService */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = HomebrewHelperService;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55EBD00E2F8D0EB500B0D1FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55F02C762F85084400207B0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55F02C702F85084400207B0C = {
+			isa = PBXGroup;
+			children = (
+				55F02CA42F8508C300207B0C /* Sources */,
+				55EBD0122F8D0EB500B0D1FF /* HomebrewHelperService */,
+				55F02CA52F8508F100207B0C /* Frameworks */,
+				55F02C7A2F85084400207B0C /* Products */,
+				55EBCFF62F8C4EE100B0D1FF /* XVideoLoader.entitlements */,
+			);
+			sourceTree = "<group>";
+		};
+		55F02C7A2F85084400207B0C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55F02C792F85084400207B0C /* XVideoLoader.app */,
+				55EBD0112F8D0EB500B0D1FF /* HomebrewHelper.xpc */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55F02CA42F8508C300207B0C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				55EBD0092F8D0C9700B0D1FF /* BrewService.swift */,
+				55F02C952F85089500207B0C /* Assets.xcassets */,
+				55F02C962F85089500207B0C /* AuthManager.swift */,
+				55F02C972F85089500207B0C /* AuthWebView.swift */,
+				55F02C982F85089500207B0C /* ContentView.swift */,
+				55F02C992F85089500207B0C /* Downloader.swift */,
+				55F02C9B2F85089500207B0C /* XVideoLoaderApp.swift */,
+				55EBD0062F8D0C3000B0D1FF /* HomebrewHelperProtocol.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		55F02CA52F8508F100207B0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55F02CA62F8508F100207B0C /* Combine.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		55EBD0102F8D0EB500B0D1FF /* HomebrewHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55EBD01E2F8D0EB500B0D1FF /* Build configuration list for PBXNativeTarget "HomebrewHelper" */;
+			buildPhases = (
+				55EBD00D2F8D0EB500B0D1FF /* Sources */,
+				55EBD00E2F8D0EB500B0D1FF /* Frameworks */,
+				55EBD00F2F8D0EB500B0D1FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				55EBD0122F8D0EB500B0D1FF /* HomebrewHelperService */,
+			);
+			name = HomebrewHelper;
+			packageProductDependencies = (
+			);
+			productName = HomebrewHelperService;
+			productReference = 55EBD0112F8D0EB500B0D1FF /* HomebrewHelper.xpc */;
+			productType = "com.apple.product-type.xpc-service";
+		};
+		55F02C782F85084400207B0C /* XVideoLoader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55F02C842F85084600207B0C /* Build configuration list for PBXNativeTarget "XVideoLoader" */;
+			buildPhases = (
+				55F02C752F85084400207B0C /* Sources */,
+				55F02C762F85084400207B0C /* Frameworks */,
+				55F02C772F85084400207B0C /* Resources */,
+				55EBD0212F8D0EB500B0D1FF /* Embed XPC Services */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55EBD01B2F8D0EB500B0D1FF /* PBXTargetDependency */,
+			);
+			name = XVideoLoader;
+			packageProductDependencies = (
+			);
+			productName = XVideoLoader;
+			productReference = 55F02C792F85084400207B0C /* XVideoLoader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		55F02C712F85084400207B0C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2640;
+				LastUpgradeCheck = 2640;
+				ORGANIZATIONNAME = "digital wave";
+				TargetAttributes = {
+					55EBD0102F8D0EB500B0D1FF = {
+						CreatedOnToolsVersion = 26.4;
+					};
+					55F02C782F85084400207B0C = {
+						CreatedOnToolsVersion = 26.4;
+					};
+				};
+			};
+			buildConfigurationList = 55F02C742F85084400207B0C /* Build configuration list for PBXProject "XVideoLoader" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 55F02C702F85084400207B0C;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 55F02C7A2F85084400207B0C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55F02C782F85084400207B0C /* XVideoLoader */,
+				55EBD0102F8D0EB500B0D1FF /* HomebrewHelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55EBD00F2F8D0EB500B0D1FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55F02C772F85084400207B0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55F02C9D2F85089500207B0C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55EBD00D2F8D0EB500B0D1FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55EBD0272F8D16C300B0D1FF /* HomebrewHelperProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55F02C752F85084400207B0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55F02C9E2F85089500207B0C /* AuthWebView.swift in Sources */,
+				55F02C9F2F85089500207B0C /* Downloader.swift in Sources */,
+				55F02CA02F85089500207B0C /* ContentView.swift in Sources */,
+				55EBD0072F8D0C3000B0D1FF /* HomebrewHelperProtocol.swift in Sources */,
+				55F02CA12F85089500207B0C /* XVideoLoaderApp.swift in Sources */,
+				55EBD00A2F8D0C9700B0D1FF /* BrewService.swift in Sources */,
+				55F02CA22F85089500207B0C /* AuthManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		55EBD01B2F8D0EB500B0D1FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55EBD0102F8D0EB500B0D1FF /* HomebrewHelper */;
+			targetProxy = 55EBD01A2F8D0EB500B0D1FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		55EBD01F2F8D0EB500B0D1FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B59U7995LU;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HomebrewHelperService/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HomebrewHelper;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.digitalwave.HomebrewHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		55EBD0202F8D0EB500B0D1FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B59U7995LU;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HomebrewHelperService/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HomebrewHelper;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.digitalwave.HomebrewHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		55F02C822F85084600207B0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = B59U7995LU;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		55F02C832F85084600207B0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = B59U7995LU;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		55F02C852F85084600207B0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = XVideoLoader.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B59U7995LU;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_FILE_ACCESS_DOWNLOADS_FOLDER = readwrite;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.digitalwave.XVideoLoader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		55F02C862F85084600207B0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = XVideoLoader.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B59U7995LU;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_FILE_ACCESS_DOWNLOADS_FOLDER = readwrite;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.digitalwave.XVideoLoader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55EBD01E2F8D0EB500B0D1FF /* Build configuration list for PBXNativeTarget "HomebrewHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55EBD01F2F8D0EB500B0D1FF /* Debug */,
+				55EBD0202F8D0EB500B0D1FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55F02C742F85084400207B0C /* Build configuration list for PBXProject "XVideoLoader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55F02C822F85084600207B0C /* Debug */,
+				55F02C832F85084600207B0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55F02C842F85084600207B0C /* Build configuration list for PBXNativeTarget "XVideoLoader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55F02C852F85084600207B0C /* Debug */,
+				55F02C862F85084600207B0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 55F02C712F85084400207B0C /* Project object */;
+}
