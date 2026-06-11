@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		559932022FDB4C1700996229 /* DownloaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559932012FDB4C1700996229 /* DownloaderViewModel.swift */; };
 		55EBD0072F8D0C3000B0D1FF /* HomebrewHelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EBD0062F8D0C3000B0D1FF /* HomebrewHelperProtocol.swift */; };
 		55EBD00A2F8D0C9700B0D1FF /* BrewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EBD0092F8D0C9700B0D1FF /* BrewService.swift */; };
 		55EBD01C2F8D0EB500B0D1FF /* HomebrewHelper.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = 55EBD0112F8D0EB500B0D1FF /* HomebrewHelper.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -44,6 +45,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		559932012FDB4C1700996229 /* DownloaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloaderViewModel.swift; sourceTree = "<group>"; };
 		55EBCFF62F8C4EE100B0D1FF /* XVideoLoader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XVideoLoader.entitlements; sourceTree = "<group>"; };
 		55EBD0062F8D0C3000B0D1FF /* HomebrewHelperProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomebrewHelperProtocol.swift; sourceTree = "<group>"; };
 		55EBD0092F8D0C9700B0D1FF /* BrewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewService.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				55F02C992F85089500207B0C /* Downloader.swift */,
 				55F02C9B2F85089500207B0C /* XVideoLoaderApp.swift */,
 				55EBD0062F8D0C3000B0D1FF /* HomebrewHelperProtocol.swift */,
+				559932012FDB4C1700996229 /* DownloaderViewModel.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				55F02CA12F85089500207B0C /* XVideoLoaderApp.swift in Sources */,
 				55EBD00A2F8D0C9700B0D1FF /* BrewService.swift in Sources */,
 				55F02CA22F85089500207B0C /* AuthManager.swift in Sources */,
+				559932022FDB4C1700996229 /* DownloaderViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
